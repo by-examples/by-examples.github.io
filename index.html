@@ -1,0 +1,21 @@
+---
+layout: default
+title: by examples
+---
+
+{% for post in site.posts %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <h2>{{ post.date | date: "%-d %B %Y" }}</h2>
+        </div>
+        <div class="panel-body">
+            <p>
+                {{ post.excerpt }}
+            </p>
+            <p class="clearfix">
+                <a class="btn btn-sm btn-primary pull-right" href="{{ post.url }}" role="button">Read more &raquo;</a>
+            </p>
+        </div>
+    </div>
+{% endfor %}

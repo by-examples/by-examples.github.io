@@ -1,0 +1,72 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    line-height: 200%;
+}
+
+/* fixed width for content */
+.myWidth {
+    width: 800px;
+}
+
+.text-pl {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.pron {
+    font-family: 'Arimo', sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.post_content h2 {
+    margin-top: 50px;
+}
+
+
+.navbar .navbar-header .navbar-brand {
+    font-family: 'Arvo', serif;
+    color: #373737;
+    text-shadow: 1px 1px white;
+    font-size: large;
+}
+
+.panel .panel-heading .panel-title {
+    font-size: 150%;
+}
+.panel .panel-heading h2 {
+    font-size: 80%;
+}
+
+.panel .panel-body {
+    padding: 40px;
+}
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size: small;
+    border-top: solid 1px #d4d4d4;
+}
+
+.footer p {
+    padding-top: 15px;
+}
