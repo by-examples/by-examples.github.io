@@ -11,8 +11,6 @@ excerpt: |
 
 ##1. Background
 
-That's really important for me, as the greater part of young
-developers I educate use Windows.
 If you try to run Symfony2 application within Vagrant
 box on Windows you will, most probably,
 get page load time quite close to 5 or 10 seconds.
@@ -27,18 +25,22 @@ This is the starting point:
 The task is:
 <strong>how to configure development machine to minimize the page load time?</strong>
 
+That's really important for me, as the greater part of young
+developers I educate use Windows.
+
 ##2. The solution
 
 My solution is very simple: move `vendor/`
 outside shared project's folder.
-Yes, as simple as that.
+
+**Yes, as simple as that.**
 
 <div class="alert alert-info" role="alert">
 <strong>
 <i class="fa fa-thumbs-o-up"></i>
 To get a huge speed up of your Windows/Vagrant/Symfony2 application
-page load time move <code>vendor/</code> folder to native filesystem,
-outside shared folder <code>/vagrant</code>.
+page load time move <code>vendor/</code> folder somewhere inside native filesystem
+of VM.
 </strong>
 </div>
 
@@ -74,16 +76,23 @@ Now, you have to install dependencies:
 And... enjoy!
 
 Even if you do not apply any other optimizations, you
-will get overwhelming speedup.
+will get an overwhelming speedup.
 
 ##3. Reason
 
 Why does this change leads to such amazing results?
-Vagrant offers very poor performance of
-IO opperations on shared folder.
+Vagrant offers very poor I/O performance of
+on shared folder.
 This is a well known feature of virtualized solutions.
 You can find more details in the post
 <a href="http://mitchellh.com/comparing-filesystem-performance-in-virtual-machines">Comparing Filesystem Performance in Virtual Machines</a>.
+
+The analysis and benchmarks of Vagrant/Symfony app
+is available in the post titled
+<a href="http://www.erikaheidi.com/blog/optimizing-symfony-applications-vagrant-boxes">
+Optimizing Symfony applications on Vagrant boxes
+</a>.
+
 
 ##4. Other optimizations concerning page load time
 
@@ -102,12 +111,11 @@ How to Override Symfony's default Directory Structure</a>.
 <i class="fa fa-thumbs-o-up"></i>
 Another important trick is to move
 <code>cache/</code> and <code>logs/</code> folders
-to native filesystem,
-outside shared folder <code>/vagrant</code>.
+into the VM's native filesystem.
 </strong>
 </div>
 
-Another good starting point for persuing Symfony2 optimization
+Another good starting point for pursuing Symfony2 optimization
 is a post titled
 <a href="http://stackoverflow.com/questions/12905404/symfony2-slow-initialization-time">
 Symfony2 Slow Initialization Time
@@ -145,13 +153,12 @@ try to run, just before the above command, the composer:
 
      $ composer install
 
-in arbitrary directory. Use the `composer.json`
-for latest Symfony Standard, for example.
+Do it in arbitrary directory and use the `composer.json`
+for the latest Symfony Standard, for example.
 
 This trick is important if you start a new project quite often.
 During my classes, I start a new project with every group of students
 once a week. By caching dependencies we save a lot of time (and nerves).
-
 
 <div class="alert alert-info" role="alert">
 <strong>
@@ -184,6 +191,7 @@ With the above tricks:
 
 ##7. Reading list
 
-1. Mitchell Hashimoto: <a href="http://mitchellh.com/comparing-filesystem-performance-in-virtual-machines">Comparing Filesystem Performance in Virtual Machines</a>.
-2. Benjamin Eberlei: <a href="http://www.whitewashing.de/2013/08/19/speedup_symfony2_on_vagrant_boxes.html">Speedup Symfony2 on Vagrant boxes</a>
-3. orourkedd, Dénes Papp <a href="http://stackoverflow.com/questions/12905404/symfony2-slow-initialization-time">Symfony2 Slow Initialization Time</a>
+1. Mitchell Hashimoto: <a href="http://mitchellh.com/comparing-filesystem-performance-in-virtual-machines">Comparing Filesystem Performance in Virtual Machines</a>
+2. Erika Heidi: <a href="http://www.erikaheidi.com/blog/optimizing-symfony-applications-vagrant-boxes">Optimizing Symfony applications on Vagrant boxes</a>
+3. Benjamin Eberlei: <a href="http://www.whitewashing.de/2013/08/19/speedup_symfony2_on_vagrant_boxes.html">Speedup Symfony2 on Vagrant boxes</a>
+4. orourkedd, Dénes Papp <a href="http://stackoverflow.com/questions/12905404/symfony2-slow-initialization-time">Symfony2 Slow Initialization Time</a>
