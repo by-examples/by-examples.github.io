@@ -70,3 +70,11 @@ body {
 .footer p {
     padding-top: 15px;
 }
+
+.figure {
+    text-align: center;
+}
+
+.figure img {
+    border: 1px solid black;
+}
