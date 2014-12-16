@@ -83,7 +83,7 @@ To install it, run the following commands
 <strong>
 <i class="fa fa-exclamation"></i>
 The above commands assume that you are logged in with root's privileges.
-If not, add `sudo` before each of them.
+If not, add <code>sudo</code> before each of them.
 </strong>
 </div>
 
