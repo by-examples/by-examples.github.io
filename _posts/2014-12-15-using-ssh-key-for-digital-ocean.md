@@ -8,7 +8,20 @@ excerpt: |
     SSH key for your newly created droplet.
 ---
 
-##1. Generate a new SSH key
+##1. Background
+
+The reason why this may be important to you
+is that ssh protocol is used to synchronize files between
+your workstation and your server. If you plan to use:
+
+* git
+* rsync
+* scp
+
+to copy files to your Digital Ocean droplet
+you should start with setting up your ssh keys.
+
+##2. Generate a new SSH key
 
 Open your shell and create a new ssh key:
 
@@ -16,6 +29,17 @@ Open your shell and create a new ssh key:
 
 You will be asked for a passphrase. To make the things easier
 you can use empty passphrase. Just press Enter key twice.
+
+<div class="alert alert-danger" role="alert">
+<strong>
+<i class="fa fa-exclamation"></i>
+Using an empty passphrase is considered to be unsafe.
+For the information how to use non-empty passphrase
+withouth necessity of typing it again and again
+refer to GitHub Help tutorial:
+<a href="https://help.github.com/articles/working-with-ssh-key-passphrases/">Working with SSH key passphrases</a>
+</strong>
+</div>
 
 The command will create two files:
 
@@ -38,8 +62,7 @@ $ mkdir .ssh
 </code></pre>
 </div>
 
-
-##2. Add the SSH key to your Digital Ocean account
+##3. Add the SSH key to your Digital Ocean account
 
 Log in to your  <a href="https://www.digitalocean.com/?refcode=dc864ecee4dc">Digital Ocean</a>
 account and upload the key
@@ -50,7 +73,7 @@ button.
     <img src="/img/2014-12-15/01.png">
 </p>
 
-##3. Create a new droplet
+##4. Create a new droplet
 
 During creation of a new droplet remember
 about adding your `developer` key to the
@@ -60,7 +83,7 @@ list of authorized keys.
     <img src="/img/2014-12-15/02.png">
 </p>
 
-##4. Update your .ssh/config
+##5. Update your .ssh/config
 
 Open your SSH configuration file with vi:
 
@@ -88,7 +111,7 @@ The IP comes from your droplet properties page.
     <img src="/img/2014-12-15/03.png">
 </p>
 
-##5. Verify your ssh access
+##6. Verify your ssh access
 
 Run the command:
 
@@ -96,3 +119,9 @@ Run the command:
 
 It should start a new ssh session to your droplet.
 
+##7. Reading list
+
+1. Github Help: <a href="https://help.github.com/articles/generating-ssh-keys/">Generating SSH keys</a>
+2. Github Help: <a href="https://help.github.com/articles/working-with-ssh-key-passphrases/">Working with SSH key passphrases</a>
+3. Stackoverflow: <a href="http://stackoverflow.com/questions/3225862/multiple-github-accounts-ssh-config">Multiple GitHub Accounts & SSH Config</a>
+4. nixCraft: <a href="http://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/">OpenSSH Config File Examples</a>
