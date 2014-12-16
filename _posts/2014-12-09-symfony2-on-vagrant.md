@@ -44,7 +44,7 @@ of VM.
 </strong>
 </div>
 
-To do this, you need to do two simple changes:
+To do this, you need two simple changes:
 
 * change destination folder for `vendor/` in `composer.json`
 * change the path to `autoload.php` file in `app/autoload.php`
@@ -80,9 +80,8 @@ will get an overwhelming speedup.
 
 ##3. Reason
 
-Why does this change leads to such amazing results?
-Vagrant offers very poor I/O performance of
-on shared folder.
+Why does this change lead to such amazing results?
+Vagrant offers very poor I/O performance of on shared folder.
 This is a well known feature of virtualized solutions.
 You can find more details in the post
 <a href="http://mitchellh.com/comparing-filesystem-performance-in-virtual-machines">Comparing Filesystem Performance in Virtual Machines</a>.
@@ -90,8 +89,7 @@ You can find more details in the post
 The analysis and benchmarks of Vagrant/Symfony app
 is available in the post titled
 <a href="http://www.erikaheidi.com/blog/optimizing-symfony-applications-vagrant-boxes">
-Optimizing Symfony applications on Vagrant boxes
-</a>.
+Optimizing Symfony applications on Vagrant boxes</a>.
 
 
 ##4. Other optimizations concerning page load time
@@ -186,8 +184,6 @@ With the above tricks:
     <li>page load time can be below 50 ms</li>
 </ul>
 </div>
-
-
 
 ##7. Reading list
 
