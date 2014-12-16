@@ -18,8 +18,9 @@ your workstation and your server. If you plan to use:
 * rsync
 * scp
 
-to copy files to your Digital Ocean droplet
-you should start with setting up your ssh keys.
+to copy files to your
+<a href="https://www.digitalocean.com/?refcode=dc864ecee4dc">Digital Ocean</a>
+droplet you should start with setting up your ssh keys.
 
 ##2. Generate a new SSH key
 
