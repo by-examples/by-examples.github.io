@@ -156,13 +156,9 @@ Remove `/var/www/html` directory:
 
     $ rm -rf /var/www/html
 
-Create a new symbolic link
+Create a new symbolic link:
 
     $ ln -s /apps/my-new-app/web /var/www/html
-
-Change the owner of the symbolic link to `www-data`:
-
-    $ chown www-data:www-data /var/www/html
 
 ##9. Reconfigure Apache
 
