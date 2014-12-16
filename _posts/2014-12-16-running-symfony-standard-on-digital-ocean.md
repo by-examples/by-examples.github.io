@@ -69,15 +69,23 @@ the following software that we will need:
 To install it, run the following commands
 (they all should be executed inside ssh session to your droplet):
 
-    $ sudo apt-get update -y
+    $ apt-get update -y
 
-    $ sudo apt-get install git -y
-    $ sudo apt-get install php5-curl -y
+    $ apt-get install git -y
+    $ apt-get install php5-curl -y
     $ a2enmod rewrite
 
     $ cd
     $ curl -sS https://getcomposer.org/installer | php
     $ mv composer.phar /usr/local/bin/composer
+
+<div class="alert alert-danger" role="alert">
+<strong>
+<i class="fa fa-exclamation"></i>
+The above commands assume that you are logged in with root's privileges.
+If not, add `sudo` before each of them.
+</strong>
+</div>
 
 ##5. Clone Symfony Standard
 
@@ -186,7 +194,7 @@ and its subdirectories.
 
 Run either of the two commands:
 
-    $ sudo /etc/init.d/apache2 restart
+    $ /etc/init.d/apache2 restart
 
     $ service apache2 restart
 
