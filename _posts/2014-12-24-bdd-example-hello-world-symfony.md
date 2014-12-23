@@ -334,3 +334,9 @@ To remove them, use:
     $ git prune
     $ git gc
 
+##8. The Example
+
+You will find the source code of the example
+on github: https://github.com/by-examples/bdd-example-01-hello-world
+
+For the instruction how to run the example refer to README.md file.
