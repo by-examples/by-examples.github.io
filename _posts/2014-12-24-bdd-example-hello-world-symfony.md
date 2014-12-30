@@ -55,8 +55,8 @@ To get back to Host OS from Guest OS use
 Create a new directory and clone the Symfony Standard repository:
 
     # Host OS
-    $ mkdir bdd-example-01-hello-world
-    $ cd bdd-example-01-hello-world
+    $ mkdir symfony-bdd-example-01-hello-world
+    $ cd symfony-bdd-example-01-hello-world
     $ git clone git@github.com:by-examples/symfony-standard.git .
 
 My repository:
