@@ -310,7 +310,23 @@ Here are the results I get on my OS X machine:
 
 My results from Windows machine...
 
-    ...to be done...
+    Server Software:        Apache/2.4.10
+    Server Hostname:        localhost
+    Server Port:            80
+
+    Document Path:          /green.html
+    Document Length:        517 bytes
+
+    Concurrency Level:      1
+    Time taken for tests:   4.525 seconds
+    Complete requests:      100
+    Failed requests:        0
+    Total transferred:      78000 bytes
+    HTML transferred:       51700 bytes
+    Requests per second:    22.10 [#/sec] (mean)
+    Time per request:       45.251 [ms] (mean)
+    Time per request:       45.251 [ms] (mean, across all concurrent requests)
+    Transfer rate:          16.83 [Kbytes/sec] received	
 
 ##8. Remove unnecessary commits
 
