@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BDD/Symfony example: Hello, world!"
+title: "Symfony/BDD example: Hello, world!"
 excerpt: |
     This example demonstrates <strong>how to begin the adventure
     of BDD</strong>. Here I will show you how to create
@@ -337,6 +337,6 @@ To remove them, use:
 ##8. The Example
 
 You will find [the source code of the example
-on github](https://github.com/by-examples/bdd-example-01-hello-world).
+on github](https://github.com/by-examples/symfony-bdd-example-01-hello-world).
 
 For the instruction how to run the example refer to `README.md` file.
