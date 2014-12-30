@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Symfony/BDD example: red, green, blue"
+title: "Symfony/BDD example 02: red, green, blue"
 excerpt: |
     This is the second example in <strong>Symfony/BDD</strong>
     series. It demonstrates how to create simple web pages.
@@ -50,7 +50,7 @@ To avoid repeating the same actions again and again
 every time I start a new project, I use branches.
 
 To introduce all this changes in your project,
-you can cherry pick them:
+you can cherry-pick them:
 
     # Host OS
     $ git cherry-pick origin/2.6.1/Gitignore
@@ -59,8 +59,15 @@ you can cherry pick them:
     $ git cherry-pick origin/2.6.1/Speedup
     $ git cherry-pick origin/2.6.1/Behat
     $ git cherry-pick origin/2.6.1/BehatInitialization
+<div class="alert alert-info" role="alert">
+<strong>
+These branches, their role, how to create them and
+how to work with them - all this will be described in
+a separate post.
+</strong>
+</div>
 
-##2.4. Install the dependencies
+###2.4. Install the dependencies
 
 Boot the VM with:
 
@@ -97,8 +104,6 @@ The project is GREEN.
 ![GREEN](/img/green.png)
 
 ##4. Tests - project is RED
-
-Remove the superflous file `features/homepage.feature`.
 
 Create the file `features/pages.feature` with the
 following contents:
@@ -142,7 +147,7 @@ This task consist of:
 * creating actions
 * creating views
 * creating main menu
-* cleanning
+* cleaning
 
 ###5.1. Create actions
 
@@ -239,17 +244,14 @@ Change the contents of the
     ...
 {% endraw %}
 
-###5.4. Cleanning
+###5.4. Cleaning
 
 Remove the file `app/Resources/views/default/index.html.twig`.
-
 
     # Host OS
     $ rm app/Resources/views/default/index.html.twig
 
-
-###6. Run the tests
-
+##6. Run the tests
 
 Clear the cache:
 
@@ -271,7 +273,6 @@ Commit your changes with:
     $ git add -A
     $ git commit -m "[BDD:GREEN] code for tests: red, green, blue"
 
-
 ##7. Visit app with your browser
 
 Run web browser and visit:
@@ -279,17 +280,15 @@ Run web browser and visit:
     http://localhost:8880/
     http://localhost:8880/app_dev.php/
 
-
-You can also view your app in guest using lynx:
+You can also view your application in guest using lynx:
 
     # Guest OS
     $ lynx http://localhost/
     $ lynx http://localhost/app_dev.php/
 
+##8. Test the efficiency
 
-##6. Test the efficiency
-
-You can test the efficiency of the app with:
+You can test the efficiency of the application with:
 
     # Guest OS
     $ ab -n 100 http://localhost/green.html
@@ -330,8 +329,8 @@ My results from Windows machine (i5/4MB RAM/not ssd):
 
 ##8. Remove unnecessary commits
 
-The history of your project is a linear
-and contains 10 commits. The command
+The history of your project is now linear
+and contains 10 commits. The command:
 
     $ git log --oneline
 
@@ -350,7 +349,7 @@ prints the output similar to:
 
 If you use `--all` switch for `$ git log`, you will see a lot of other
 commits (the original commits from Symfony Standard).
-To remove them, use:
+To remove them, use the following commands:
 
     $ git remote rm origin
     $ git branch -D 2.7
@@ -364,6 +363,6 @@ Now your repository contains only 10 commits listed above.
 ##9. The Example
 
 You will find [the source code of the example
-on github](https://github.com/by-examples/symfony-bdd-example-02-red-green-blue).
+on GitHub](https://github.com/by-examples/symfony-bdd-example-02-red-green-blue).
 
 For the instruction how to run the example refer to `README.md` file.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Symfony/BDD example: Hello, world!"
+title: "Symfony/BDD example 01: Hello, world!"
 excerpt: |
     This example demonstrates <strong>how to begin the adventure
     of BDD</strong>. Here I will show you how to create
