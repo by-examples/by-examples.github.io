@@ -59,6 +59,7 @@ you can cherry-pick them:
     $ git cherry-pick origin/2.6.1/Speedup
     $ git cherry-pick origin/2.6.1/Behat
     $ git cherry-pick origin/2.6.1/BehatInitialization
+    
 <div class="alert alert-info" role="alert">
 <strong>
 These branches, their role, how to create them and
