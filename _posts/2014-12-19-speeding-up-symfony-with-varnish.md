@@ -20,8 +20,8 @@ The assumptions are following:
 If you need additional assistance to meet the above assumptions
 refer to:
 
-* <a href="http://by-examples.net/2014/12/15/using-ssh-key-for-digital-ocean.html">A tutorial on installing ssh keys for Digital Ocean droplet</a>
-* <a href="http://by-examples.net/2014/12/16/running-symfony-standard-on-digital-ocean.html">A tutorial on setting up Symfony application on Digital Ocean droplet</a>
+* A tutorial on <a href="http://by-examples.net/2014/12/15/using-ssh-key-for-digital-ocean.html">Installing ssh keys for Digital Ocean droplet</a>
+* A tutorial on <a href="http://by-examples.net/2014/12/16/running-symfony-standard-on-digital-ocean.html">Running Symfony application on Digital Ocean droplet</a>
 
 ##2. Install lynx and visit the default web page
 
