@@ -303,6 +303,25 @@ Here are the results I get on my OS X machine:
 
 My results from Windows machine...
 
+    Server Software:        Apache/2.4.10
+    Server Hostname:        localhost
+    Server Port:            80
+
+    Document Path:          /
+    Document Length:        284 bytes
+
+    Concurrency Level:      1
+    Time taken for tests:   4.179 seconds
+    Complete requests:      100
+    Failed requests:        0
+    Total transferred:      54700 bytes
+    HTML transferred:       28400 bytes
+    Requests per second:    23.93 [#/sec] (mean)
+    Time per request:       41.791 [ms] (mean)
+    Time per request:       41.791 [ms] (mean, across all concurrent requests)
+    Transfer rate:          12.78 [Kbytes/sec] received
+
+
 ##7. Remove unnecessary commits
 
 The history of your project is a linear
