@@ -294,7 +294,7 @@ You can test the efficiency of the app with:
     # Guest OS
     $ ab -n 100 http://localhost/green.html
 
-Here are the results I get on my OS X machine:
+Here are the results I get on my OS X machine (i7/8MB RAM/ssd):
 
     Concurrency Level:      1
     Time taken for tests:   1.628 seconds
@@ -308,7 +308,7 @@ Here are the results I get on my OS X machine:
     Time per request:       16.282 [ms] (mean, across all concurrent requests)
     Transfer rate:          10.20 [Kbytes/sec] received
 
-My results from Windows machine...
+My results from Windows machine (i5/4MB RAM/not ssd):
 
     Server Software:        Apache/2.4.10
     Server Hostname:        localhost
