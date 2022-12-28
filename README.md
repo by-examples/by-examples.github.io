@@ -1,5 +1,3 @@
-by-examples.net
-===============
+# by-examples.github.io
 
-* http://by-examples.net
 * http://by-examples.github.io
